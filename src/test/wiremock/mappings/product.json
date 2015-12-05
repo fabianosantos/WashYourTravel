@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/sku/123456"
+    },
+    "response": {
+		"status": 200,
+		"bodyFileName": "product.json",
+		"headers": {
+			"Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

@@ -16,6 +16,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot' 
 apply plugin: 'war'
 
+apply from: "wireMocks.gradle"
 
 war {
     baseName = 'WashYourTravel'
@@ -35,6 +36,8 @@ configurations {
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-mongodb')
     compile('org.springframework.boot:spring-boot-starter-web')
+    compile('org.apache.httpcomponents:httpclient:4.3.4')
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
     testCompile('org.springframework.boot:spring-boot-starter-test') 
 }

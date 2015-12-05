@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/sku/eligible"
+    },
+    "response": {
+		"status": 200,
+		"bodyFileName": "sku-api/eligible.json",
+		"headers": {
+			"Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

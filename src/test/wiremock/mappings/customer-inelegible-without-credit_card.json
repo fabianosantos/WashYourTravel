@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/customer/ineligible-without-credit-card/credit-card"
+    },
+    "response": {
+		"status": 200,
+		"bodyFileName": "customer-api/credit-card/without-credit-card.json",
+		"headers": {
+			"Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

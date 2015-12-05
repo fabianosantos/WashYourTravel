@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1040,
+        "number": "444433######1111",
+        "criptoNumber": "000b8081d79c2920542eb4d8081ee4717ac06ab62033f1fc21fb0f46690256ad",
+        "verificationCode": "78a99aa9f1ee66b803a8bc30184a265d",
+        "holderName": "MARIA",
+        "expirationDate": "2020-01",
+        "bin": "444433",
+        "status":"CANCELLED",
+        "_links": {
+            "addresses": [
+                {
+                    "id": "1359-1",
+                    "href": "http://api-portal.ideais.com.br/api/v1/mock/customer-api/v4/customer/15519121/address/1359-1"
+                },
+                {
+                    "id": "1358-1",
+                    "href": "http://api-portal.ideais.com.br/api/v1/mock/customer-api/v4/customer/15519121/address/1358-1"
+                }
+            ]
+        }
+    }
+]

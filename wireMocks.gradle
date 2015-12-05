@@ -1,0 +1,23 @@
+task startWireMocks << {
+	tasks['stopWireMocks'].execute()
+	println("Starting wireMock...")
+	ant.java(
+		jar: "src/test/wiremock/wiremock-1.57-standalone.jar",
+		dir: relativePath('src/test/wiremock'),
+		fork: true,
+		spawn: true
+	) {
+		arg(line: "--port 15432")
+	}
+}
+test.dependsOn startWireMocks
+
+task stopWireMocks {
+	println("Killing wireMock...")
+	killWireMock()	
+}
+
+def killWireMock() {
+	def command = "fuser -k 15432/tcp".execute()
+	println("WireMock is offline!")
+}

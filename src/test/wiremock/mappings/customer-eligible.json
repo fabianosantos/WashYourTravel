@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/customer/eligible/credit-card"
+    },
+    "response": {
+		"status": 200,
+		"bodyFileName": "customer-api/credit-card/valid-credit-card.json",
+		"headers": {
+			"Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}

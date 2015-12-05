@@ -1,0 +1,91 @@
+{
+    "id": "ineligible",
+    "name": "Descrição do sku",
+    "salable": true,
+    "arrivalDate": "2011-04-14T23:00:00.000",
+    "dimensionInfo": {
+        "width": 123,
+        "height": 12,
+        "length": 12347,
+        "weight": 12389,
+        "dimensionalFactor": 1.2,
+        "dimensionWarning": true
+    },
+    "_embedded": {
+        "kitSkus": [
+            {
+                "id": "6825942",
+                "_links": {
+                    "self": {
+                        "id": "6825942",
+                        "href": "http://host/6825942"
+                    }
+                },
+                "quantity": 1
+            },
+            {
+                "id": "6971678",
+                "_links": {
+                    "self": {
+                        "id": "6971678",
+                        "href": "http://host/6971678"
+                    }
+                },
+                "quantity": 2
+            }
+        ],
+        "sellers": [
+            {
+                "id": "9055134000184",
+                "_links": {
+                    "seller": {
+                        "id": "9055134000184",
+                        "href": "http://sellerhost/v1/seller/9055134000184"
+                    }
+                }
+            },
+            {
+                "id": "43524352432543",
+                "_links": {
+                    "seller": {
+                        "id": "43524352432543",
+                        "href": "http://sellerhost/v1/seller/43524352432543"
+                    }
+                }
+            }
+        ]
+    },
+    "eans": [
+        "abc",
+        "def"
+    ],
+    "launchingDate": "2011-06-12T00:00:00.000",
+    "saleClassification": "A",
+    "soldSeparatelly": true,
+    "diffs": [
+        {
+            "type": "Cor",
+            "value": "Azul"
+        },
+        {
+            "type": "Tamanho",
+            "value": "44"
+        }
+    ],
+    "_links": {
+        "media": {
+            "id": "120090101",
+            "href": "http://mediahost/v1/media?skuId=120090101"
+        },
+        "product": {
+            "id": "9875897689",
+            "href": "http://producthost/v1/product/9875897689"
+        }
+    },
+    "merchandiseHierarchy": [
+        "10009079",
+        "20003417",
+        "30008265",
+        "40008726"
+    ]
+}

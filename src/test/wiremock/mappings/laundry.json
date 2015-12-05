@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/address/123/laundry"
+    },
+    "response": {
+		"status": 200,
+		"bodyFileName": "laundry.json",
+		"headers": {
+			"Content-Type": "application/json; charset=utf-8"
+        }
+    }
+}
