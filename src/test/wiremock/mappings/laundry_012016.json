@@ -1,11 +1,11 @@
 {
     "request": {
         "method": "GET",
-        "url": "/health"
+        "url": "/laundry/012016"
     },
     "response": {
 		"status": 200,
-		"bodyFileName": "externalResourceHealth.json",
+		"bodyFileName": "laundry_012016.json",
 		"headers": {
 			"Content-Type": "application/json; charset=utf-8"
         }

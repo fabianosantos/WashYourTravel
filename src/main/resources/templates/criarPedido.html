@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WYT - Criar Pedido</title>
+</head>
+<body>
+<h3><u>Cadastro de Pedido</u></h3>
+<p></p>
+
+		<table border="1">
+			<tr>
+				<td>Lavanderia</td>
+				<td>Descrição</td>
+				<td>Avaliação</td>
+			</tr>
+			<tr>
+                <td th:text="${lavanderia.id}"></td>
+                <td th:text="${lavanderia.descricao}"></td>
+                <td th:text="${lavanderia.avaliacao}" align="center"></td>
+            </tr>
+		</table>
+		
+<p></p>
+
+	<form class="form-horizontal" th:object="${pedido}"	th:action="@{/pedido}" method="post">
+		<input type="hidden" th:field="*{codigoLavanderia}" />
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Data:</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" th:field="*{data}" />
+			</div>
+		</div>
+		<div>
+			<label for="items">Tipo de Item:</label><br></br>
+			<select th:field="*{items}" th:remove="all-but-first">
+                <option th:each="tipo : ${tiposItem}"
+                        th:value="${tipo}" th:text="${tipo}">Tipo Item</option>
+                <option>Another payment method</option>
+            </select>
+        </div>
+		<div class="form-group">
+			<label class="col-sm-2 control-label">Quantidade:</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" th:field="*{items}" />
+			</div>
+		</div>
+		<div class="row">
+			<button type="submit" class="btn btn-default">Submit</button>
+		</div>
+	</form>
+
+	<table>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+
+</body>
+</html>

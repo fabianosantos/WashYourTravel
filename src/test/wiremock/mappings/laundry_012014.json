@@ -1,11 +1,11 @@
 {
     "request": {
         "method": "GET",
-        "url": "/sku/ineligible"
+        "url": "/laundry/012014"
     },
     "response": {
 		"status": 200,
-		"bodyFileName": "sku-api/ineligible.json",
+		"bodyFileName": "laundry_012014.json",
 		"headers": {
 			"Content-Type": "application/json; charset=utf-8"
         }

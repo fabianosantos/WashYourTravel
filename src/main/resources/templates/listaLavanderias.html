@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lista de lavanderias na proximidade</title>
+</head>
+<body>
+<h3>Selecione uma das lavanderias que localizamos próximo a você... </h3>
+<p></p>
+
+		<table border="1">
+			<tr>
+				<td>Lavanderia</td>
+				<td>Descrição</td>
+				<td>Avaliação</td>
+			</tr>
+  			<tr th:each = "lavanderia : ${lavanderias}">
+                <td th:text="${lavanderia.id}"></td>
+                <td th:text="${lavanderia.descricao}"></td>
+                <td th:text="${lavanderia.avaliacao}" align="center"></td>
+                <td><a th:href="${'/pedido/novo?lavanderia=' + lavanderia.id}">Fazer Pedido</a></td>
+            </tr>
+		</table>
+
+</body>
+</html>

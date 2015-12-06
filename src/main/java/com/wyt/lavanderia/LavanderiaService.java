@@ -12,6 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class LavanderiaService {
 	
 	private static final String PARAM = "/address/{address}/laundry";
+	private static final String PARAM_BY_ID = "/laundry/{id}";
 
 	@Autowired
 	private RestTemplate restTemplate;
@@ -27,6 +28,10 @@ public class LavanderiaService {
 	private String createURL() {
 		// TODO Auto-generated method stub
 		return endpoint + PARAM;
+	}
+
+	public Lavanderia getById(String lavanderia) {
+		return restTemplate.getForObject(endpoint + PARAM_BY_ID, Lavanderia.class, lavanderia);
 	}
 
 }
